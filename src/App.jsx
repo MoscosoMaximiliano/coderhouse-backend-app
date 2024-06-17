@@ -11,9 +11,12 @@ function App () {
   const [products, setProducts] = useState([])
   const [loggedIn, setLoggedIn] = useState(false)
   useEffect(() => {
-    axios(`${import.meta.env.VITE_API}/api/products`, {
-      withCredentials: true
-    })
+    axios(
+      `https://coderhouse-backend-production-2030.up.railway.app/api/products`,
+      {
+        withCredentials: true
+      }
+    )
       .then(response => {
         setProducts(response.data.response.docs)
       })
