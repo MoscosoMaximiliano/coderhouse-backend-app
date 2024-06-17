@@ -11,7 +11,7 @@ function App () {
   const [products, setProducts] = useState([])
   const [loggedIn, setLoggedIn] = useState(false)
   useEffect(() => {
-    axios(`${process.env.REACT_APP_BASE_URL}/api/products`, {
+    axios(`${import.meta.env.VITE_API}/api/products`, {
       withCredentials: true
     })
       .then(response => {
