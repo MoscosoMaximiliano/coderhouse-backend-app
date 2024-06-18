@@ -8,8 +8,12 @@ import Users from './components/pages/Users.jsx'
 import NoResultPage from './components/pages/NoResultPage'
 import Products from './components/pages/Products.jsx'
 import PaymentPage from './components/pages/PaymentPage.jsx'
+import LoginComponent from './components/pages/LoginPage.jsx'
 
-function App() {
+import React from 'react'
+import RegisterComponent from './components/pages/RegisterPage.jsx'
+
+function App () {
   return (
     <BrowserRouter>
       <CartProvider>
@@ -28,6 +32,9 @@ function App() {
           <Route exact path='/cart' element={<Cart />} />
           <Route exact path='/payment' element={<PaymentPage />} />
           <Route exct path='*' element={<NoResultPage />} />
+
+          <Route exact path='/login' element={<LoginComponent />} />
+          <Route exact path='/register' element={<RegisterComponent />} />
         </Routes>
       </CartProvider>
     </BrowserRouter>
