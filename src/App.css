@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 2rem;
+  color: #defd53;
+  text-align: center;
+}
+
+.productsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem;
+}
+.productCard {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0 10px;
+  border: 1px solid black;
+  &:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.genericButton {
+  width: 10rem;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #defd53;
+  letter-spacing: 2px;
+  font-weight: bold;
+  &:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid #defd53;
+    cursor: pointer;
+  }
+}
+
+.buttonPanel {
+  display: flex;
+  justify-content: center;
+}
