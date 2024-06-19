@@ -5,15 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "install": "npm ci --legacy-peer-deps",
     "build": "npm run build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "serve dist -n -L -p $PORT"
   },
   "dependencies": {
-    "@stripe/react-stripe-js": "^2.7.1",
-    "@stripe/stripe-js": "^4.0.0",
+    "@stripe/react-stripe-js": "1.16.1",
+    "@stripe/stripe-js": "1.46.0",
     "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
