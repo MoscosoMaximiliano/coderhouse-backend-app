@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "install": "npm ci --legacy-peer-deps",
-    "build": "npm run install && npm run build",
+    "build": "npm run build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "serve dist -n -L -p $PORT"
