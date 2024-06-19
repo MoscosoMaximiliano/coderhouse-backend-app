@@ -14,8 +14,8 @@ import React, { useContext } from 'react'
 import { CartContext } from './provider/CartProvider'
 
 const PaymentForm = () => {
-  const stripe = useStripe()
-  const elements = useElements()
+  // const stripe = useStripe()
+  // const elements = useElements()
   const { cart } = useContext(CartContext)
 
   const [name, setName] = React.useState('')
@@ -122,7 +122,7 @@ const PaymentForm = () => {
                 id='name'
                 value={name}
                 onChange={e => setName(e.target.value)}
-                className='px-3 py-2 text-sm text-gray-700 bg-white border border-gray-300 rounded'
+                className='w-full px-3 py-2 text-sm text-gray-700 bg-white border border-gray-300 rounded'
               />
             </div>
             <div>
@@ -133,7 +133,7 @@ const PaymentForm = () => {
                 id='email'
                 value={email}
                 onChange={e => setEmail(e.target.value)}
-                className='px-3 py-2 text-sm text-gray-700 bg-white border border-gray-300 rounded'
+                className='w-full px-3 py-2 text-sm text-gray-700 bg-white border border-gray-300 rounded'
               />
             </div>
             <div>
@@ -144,7 +144,7 @@ const PaymentForm = () => {
                 id='PC'
                 value={postalCode}
                 onChange={e => setPostalCode(e.target.value)}
-                className='px-3 py-2 text-sm text-gray-700 bg-white border border-gray-300 rounded'
+                className='w-full px-3 py-2 text-sm text-gray-700 bg-white border border-gray-300 rounded'
               />
             </div>
 
